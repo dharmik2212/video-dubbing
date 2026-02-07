@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DubMaster - AI Video Dubbing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- PARTICLE BACKGROUND -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="logo-icon">◈</span> DubMaster
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#how-it-works" class="nav-link">How It Works</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">✦ AI-Powered Video Dubbing</div>
+            <h1 class="hero-title">
+                Transform Your<br>
+                <span class="hero-highlight">Video Content</span><br>
+                Into Any Language
+            </h1>
+            <p class="hero-desc">
+                Upload a movie or paste a video link. Our AI extracts dialogue, transcribes it, translates to your
+                target language, and generates a dubbed audio track — all in one seamless workflow.
+            </p>
+            <a href="#dubbing-studio" class="cta-btn">
+                <span>Start Dubbing</span>
+                <span class="btn-arrow">→</span>
+            </a>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-card">
+                <div class="card-glow"></div>
+                <div class="card-icon">🎬</div>
+                <div class="card-text">Video Input</div>
+            </div>
+            <div class="hero-arrow">⟶</div>
+            <div class="hero-card">
+                <div class="card-glow"
+                    style="background: radial-gradient(circle, rgba(0,212,255,0.3) 0%, transparent 70%)"></div>
+                <div class="card-icon">🤖</div>
+                <div class="card-text">AI Processing</div>
+            </div>
+            <div class="hero-arrow">⟶</div>
+            <div class="hero-card">
+                <div class="card-glow"
+                    style="background: radial-gradient(circle, rgba(0,255,136,0.3) 0%, transparent 70%)"></div>
+                <div class="card-icon">🎧</div>
+                <div class="card-text">Dubbed Output</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="features">
+        <div class="section-label">✦ Capabilities</div>
+        <h2 class="section-title">What DubMaster Can Do</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-num">01</div>
+                <div class="feature-icon">📥</div>
+                <h3>Multi-Input Support</h3>
+                <p>Upload MP4, MKV, AVI files or paste YouTube / online video links directly.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-num">02</div>
+                <div class="feature-icon">🗣️</div>
+                <h3>Speech Recognition</h3>
+                <p>Advanced AI extracts and transcribes dialogue from your video with high accuracy.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-num">03</div>
+                <div class="feature-icon">🌐</div>
+                <h3>50+ Languages</h3>
+                <p>Translate extracted dialogue into over 50 languages with contextual accuracy.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-num">04</div>
+                <div class="feature-icon">🎤</div>
+                <h3>AI Voice Synthesis</h3>
+                <p>Generate natural-sounding dubbed audio that matches the original video's timing.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-num">05</div>
+                <div class="feature-icon">🔊</div>
+                <h3>Audio Mixing</h3>
+                <p>Seamlessly blend dubbed audio with original background music and sound effects.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-num">06</div>
+                <div class="feature-icon">⬇️</div>
+                <h3>Export & Download</h3>
+                <p>Download the final dubbed video in MP4 format, ready for any platform.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works" class="how-section">
+        <div class="section-label">✦ Process</div>
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Input Your Video</h3>
+                    <p>Upload a local video file or paste a URL from YouTube or any supported streaming platform.</p>
+                </div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Select Language</h3>
+                    <p>Choose your source language and the target language you want the video dubbed into.</p>
+                </div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>AI Processing</h3>
+                    <p>Our AI transcribes, translates, and synthesizes dubbed audio automatically.</p>
+                </div>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Download Result</h3>
+                    <p>Preview the dubbed video and download the final MP4 file to your device.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DUBBING STUDIO -->
+    <section id="dubbing-studio" class="studio">
+        <div class="section-label">✦ Studio</div>
+        <h2 class="section-title">Dubbing Studio</h2>
+
+        <div class="studio-container">
+            <!-- INPUT METHOD TOGGLE -->
+            <div class="input-toggle">
+                <button class="toggle-btn active" id="uploadToggle" onclick="switchMode('upload')">
+                    <span>📁</span> Upload Video
+                </button>
+                <button class="toggle-btn" id="linkToggle" onclick="switchMode('link')">
+                    <span>🔗</span> Video Link
+                </button>
+            </div>
+
+            <!-- UPLOAD AREA -->
+            <div id="uploadArea" class="input-panel active">
+                <div class="dropzone" id="dropzone">
+                    <div class="dropzone-icon">⬆</div>
+                    <p class="dropzone-text">Drag & drop your video here</p>
+                    <p class="dropzone-sub">MP4, MKV, AVI, MOV — Max 2GB</p>
+                    <button class="browse-btn" onclick="document.getElementById('fileInput').click()">Browse
+                        Files</button>
+                    <input type="file" id="fileInput" accept="video/*" style="display:none"
+                        onchange="handleFileSelect(event)">
+                </div>
+                <div id="filePreview" class="file-preview" style="display:none;">
+                    <div class="file-info">
+                        <span class="file-icon">🎬</span>
+                        <div class="file-details">
+                            <span class="file-name" id="fileName">movie.mp4</span>
+                            <span class="file-size" id="fileSize">245 MB</span>
+                        </div>
+                    </div>
+                    <button class="remove-btn" onclick="removeFile()">✕</button>
+                </div>
+            </div>
+
+            <!-- LINK AREA -->
+            <div id="linkArea" class="input-panel" style="display:none;">
+                <div class="link-input-wrapper">
+                    <input type="text" id="videoLink" class="link-input"
+                        placeholder="Paste video URL here (YouTube, Vimeo, etc.)">
+                    <button class="fetch-btn" onclick="fetchVideo()">
+                        <span>Fetch</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </div>
+                <div id="linkPreview" class="link-preview" style="display:none;">
+                    <div class="preview-thumb">
+                        <span>▶</span>
+                    </div>
+                    <div class="preview-info">
+                        <span id="videoTitle" class="preview-title">Video Title Here</span>
+                        <span id="videoDuration" class="preview-duration">Duration: 2h 15min</span>
+                    </div>
+                </div>
+                <div class="supported-sites">
+                    <span class="site-tag">YouTube</span>
+                    <span class="site-tag">Vimeo</span>
+                    <span class="site-tag">Dailymotion</span>
+                    <span class="site-tag">Rumble</span>
+                    <span class="site-tag">+ More</span>
+                </div>
+            </div>
+
+            <!-- LANGUAGE SELECTION -->
+            <div class="lang-section">
+                <div class="lang-group">
+                    <label class="lang-label">Source Language</label>
+                    <div class="select-wrapper">
+                        <select id="sourceLang" class="lang-select">
+                            <option value="en">🇬🇧 English</option>
+                            <option value="es">🇪🇸 Spanish</option>
+                            <option value="fr">🇫🇷 French</option>
+                            <option value="de">🇩🇪 German</option>
+                            <option value="hi">🇮🇳 Hindi</option>
+                            <option value="zh">🇨🇳 Chinese</option>
+                            <option value="ja">🇯🇵 Japanese</option>
+                            <option value="ko">🇰🇷 Korean</option>
+                            <option value="ar">🇸🇦 Arabic</option>
+                            <option value="pt">🇧🇷 Portuguese</option>
+                            <option value="it">🇮🇹 Italian</option>
+                            <option value="ru">🇷🇺 Russian</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="lang-swap" onclick="swapLangs()">⇄</div>
+                <div class="lang-group">
+                    <label class="lang-label">Target Language</label>
+                    <div class="select-wrapper">
+                        <select id="targetLang" class="lang-select">
+                            <option value="hi">🇮🇳 Hindi</option>
+                            <option value="en">🇬🇧 English</option>
+                            <option value="es">🇪🇸 Spanish</option>
+                            <option value="fr">🇫🇷 French</option>
+                            <option value="de">🇩🇪 German</option>
+                            <option value="zh">🇨🇳 Chinese</option>
+                            <option value="ja">🇯🇵 Japanese</option>
+                            <option value="ko">🇰🇷 Korean</option>
+                            <option value="ar">🇸🇦 Arabic</option>
+                            <option value="pt">🇧🇷 Portuguese</option>
+                            <option value="it">🇮🇹 Italian</option>
+                            <option value="ru">🇷🇺 Russian</option>
+                            <option value="th">🇹🇭 Thai</option>
+                            <option value="vi">🇻🇳 Vietnamese</option>
+                            <option value="tr">🇹🇷 Turkish</option>
+                            <option value="pl">🇵🇱 Polish</option>
+                            <option value="nl">🇳🇱 Dutch</option>
+                            <option value="sv">🇸🇪 Swedish</option>
+                            <option value="uk">🇺🇦 Ukrainian</option>
+                            <option value="el">🇬🇷 Greek</option>
+                            <option value="cs">🇨🇿 Czech</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VOICE & OPTIONS -->
+            <div class="options-row">
+                <div class="option-group">
+                    <label class="opt-label">Voice Style</label>
+                    <select id="voiceStyle" class="opt-select">
+                        <option value="natural">Natural</option>
+                        <option value="expressive">Expressive</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="cinematic">Cinematic</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label class="opt-label">Voice Gender</label>
+                    <select id="voiceGender" class="opt-select">
+                        <option value="auto">Auto-detect</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="option-group">
+                    <label class="opt-label">Output Quality</label>
+                    <select id="outputQuality" class="opt-select">
+                        <option value="high">High (1080p)</option>
+                        <option value="medium">Medium (720p)</option>
+                        <option value="low">Standard (480p)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- ADVANCED OPTIONS -->
+            <div class="advanced-section">
+                <button class="adv-toggle" onclick="toggleAdvanced()">
+                    ⚙ Advanced Options <span id="advArrow">▼</span>
+                </button>
+                <div id="advancedPanel" class="advanced-panel">
+                    <div class="adv-row">
+                        <div class="adv-item">
+                            <label>Keep Original Audio</label>
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" id="keepOriginal" class="custom-check">
+                                <label for="keepOriginal" class="check-label"></label>
+                            </div>
+                        </div>
+                        <div class="adv-item">
+                            <label>Preserve Background Music</label>
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" id="keepBGMusic" class="custom-check" checked>
+                                <label for="keepBGMusic" class="check-label"></label>
+                            </div>
+                        </div>
+                        <div class="adv-item">
+                            <label>Lip Sync Enhancement</label>
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" id="lipSync" class="custom-check" checked>
+                                <label for="lipSync" class="check-label"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adv-row">
+                        <div class="adv-item full-width">
+                            <label>Dubbed Audio Volume: <span id="volVal">75</span>%</label>
+                            <input type="range" id="dubVolume" class="custom-range" min="10" max="100" value="75"
+                                oninput="document.getElementById('volVal').textContent=this.value">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- START BUTTON -->
+            <button class="start-btn" id="startBtn" onclick="startDubbing()">
+                <span class="btn-glow"></span>
+                <span class="btn-content">
+                    <span class="btn-icon">🚀</span>
+                    <span>Start Dubbing</span>
+                </span>
+            </button>
+        </div>
+
+        <!-- PROCESSING MODAL -->
+        <div id="processingModal" class="modal" style="display:none;">
+            <div class="modal-overlay"></div>
+            <div class="modal-box">
+                <div class="modal-title">Processing Your Video</div>
+                <div class="progress-container">
+                    <div class="progress-step active" id="step1">
+                        <div class="progress-icon">🔍</div>
+                        <div class="progress-text">Extracting Audio</div>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" id="bar1"></div>
+                        </div>
+                    </div>
+                    <div class="progress-step" id="step2">
+                        <div class="progress-icon">📝</div>
+                        <div class="progress-text">Transcribing Speech</div>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" id="bar2"></div>
+                        </div>
+                    </div>
+                    <div class="progress-step" id="step3">
+                        <div class="progress-icon">🌐</div>
+                        <div class="progress-text">Translating Dialogue</div>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" id="bar3"></div>
+                        </div>
+                    </div>
+                    <div class="progress-step" id="step4">
+                        <div class="progress-icon">🎤</div>
+                        <div class="progress-text">Synthesizing Dubbed Voice</div>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" id="bar4"></div>
+                        </div>
+                    </div>
+                    <div class="progress-step" id="step5">
+                        <div class="progress-icon">🔊</div>
+                        <div class="progress-text">Mixing & Rendering Final Video</div>
+                        <div class="progress-bar-wrap">
+                            <div class="progress-bar" id="bar5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-status" id="modalStatus">Initializing...</div>
+                <div class="modal-eta">
+                    Estimated time: <span id="etaTime">3-5 minutes</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESULT MODAL -->
+        <div id="resultModal" class="modal" style="display:none;">
+            <div class="modal-overlay"></div>
+            <div class="modal-box result-box">
+                <div class="result-success">
+                    <div class="success-icon">✓</div>
+                    <div class="result-title">Dubbing Complete!</div>
+                </div>
+                <div class="result-video-wrap">
+                    <video id="previewVideo" controls
+                        style="width:100%;max-height:300px;background:#000;border-radius:12px;display:none;">
+                        Your browser does not support video playback.
+                    </video>
+                    <div id="videoPlaceholder" class="result-video-placeholder" onclick="loadPreview()">
+                        <span class="play-icon">▶</span>
+                        <span class="play-text">Click to Preview</span>
+                    </div>
+                </div>
+                <div class="result-details">
+                    <div class="detail-tag">
+                        <span>Target:</span> <span id="resultLang">Hindi</span>
+                    </div>
+                    <div class="detail-tag">
+                        <span>Duration:</span> <span id="resultDuration">2h 15min</span>
+                    </div>
+                    <div class="detail-tag">
+                        <span>Quality:</span> <span id="resultQuality">1080p</span>
+                    </div>
+                </div>
+                <div class="result-btns">
+                    <button class="dl-btn" onclick="downloadVideo()">
+                        ⬇ Download MP4
+                    </button>
+                    <button class="dl-btn secondary" onclick="downloadSubtitles()">
+                        📄 Download Subtitles (SRT)
+                    </button>
+                </div>
+                <button class="close-result" onclick="closeResult()">← Back to Studio</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-icon">◈</span> DubMaster
+                <p>AI-Powered Video Dubbing for the modern world.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#dubbing-studio">Studio</a>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <a href="#">Documentation</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-links">
+                <h4>Supported Formats</h4>
+                <span>MP4, MKV, AVI, MOV</span>
+                <span>YouTube Links</span>
+                <span>Vimeo Links</span>
+                <span>50+ Languages</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 DubMaster. All rights reserved. | Powered by AI</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

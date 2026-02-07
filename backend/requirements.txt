@@ -1,0 +1,26 @@
+# FastAPI and server
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Video download (supports 1000+ sites)
+yt-dlp==2024.1.26
+
+# Transcription (OpenAI Whisper - runs locally)
+openai-whisper==20231117
+
+# Translation (free, no API key needed)
+deep-translator==1.11.4
+
+# Text-to-Speech (Microsoft Edge TTS - free, high quality)
+edge-tts==6.1.9
+
+# Audio processing
+pydub==0.25.1
+
+# Utilities
+aiofiles==23.2.1
+python-dotenv==1.0.0
+
+# Voice Cloning (optional - requires Fish Audio API key)
+fish-audio-sdk
